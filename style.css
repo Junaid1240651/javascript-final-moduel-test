@@ -1,0 +1,242 @@
+body{
+    background: linear-gradient(180deg, #0E1A44 0%, rgba(52, 96, 250, 0.68) 100%);
+height: 100vh;
+text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.scoreDiv{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 10px 10px 20px ;
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    width: 800px;
+    height: 140px;
+    
+}
+
+.iconDiv{
+    height: 40vh;
+    padding-top: 60px;
+}
+
+.playAgain{
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 46.5%;
+    top: 42%;
+    font-family: 'Roboto';
+    font-style: normal;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    border-radius: 15px;
+color: #6B6B6B;
+}
+  
+.scissors{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    left: 30%;
+    top: 30%;
+}
+
+.rock{
+    position: absolute;
+    left: 57.5%;
+    top: 30%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.paperdiv{
+    display: flex;
+    justify-content: center;
+}
+.paper{
+    position: absolute;
+    left: 43%;
+    top: 60%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#line{
+    position: absolute;
+    left: 38%;
+    top: 40%;
+    border: 15px solid rgba(0, 0, 0, 0.64);
+    width: 420px;
+    height: 0px;
+}
+#line1{
+    position: absolute;
+    left: 48%;
+    top: 53%;
+    width: 320px;
+    height: 0px;
+    border: 15px solid rgba(0, 0, 0, 0.64);
+    transform: rotate(127deg);
+}
+#line2{
+    position: absolute;
+    left: 30%;
+    top: 55%;
+    width: 310px;
+    height: 0px;    
+    border: 15px solid rgba(0, 0, 0, 0.64);
+    transform: rotate(55deg);
+}
+.pick{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+}
+.tryDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.tryAgain{
+    display: none;
+    width: 99px;
+    height: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #FAF2F2;
+}
+#ruleDiv{
+    display: none;
+    justify-content: end;
+    height: 30vh;
+    padding-top: 155px;
+
+}
+
+.rule{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: start;
+    color: white;
+    align-items: center;
+    text-align: start;
+
+}
+.ruleBtnDiv{
+    padding-top: 120px;
+    display: flex;
+    justify-content: end;
+}
+.ruleBtnDiv>button{
+    height: 80px;
+    width: 180px;
+    border-radius: 20px;
+    font-size: 40px;
+}
+#hideBtn{
+border-radius: 100%;
+width: 30px;
+height: 30px;
+margin-left: 20px ;
+background-color: red;
+font-size: 20px;
+color: white;
+}
+h2{
+    margin: 10px;
+    
+}
+.win{
+    display: none;
+    left: 505;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    margin: 0px;
+}
+.ScoreinnerDiv{
+    border-radius: 10px;
+    background-color: white;
+}
+.ScoreinnerDiv>h2{
+    color: black;
+}
+.ScoreinnerDiv>h1{
+font-size: 50px;
+color: black;
+
+}
+.pickerHover{
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 40px 10px #00d7c3;
+}
+.buttonShadow {
+    background-color: transparent;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  .buttonShadow:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 40px 10px #00d7c3;
+    border: 3px solid #00d7c3;
+  }
+
+@media only screen and (max-width: 1475px) {
+    .scissors {
+      width: 150px;
+      height: 150px;
+    }
+    .rock {
+        width: 150px;
+        height: 150px;
+
+      }
+      .paper {
+        width: 150px;
+        height: 150px;
+      }
+      #line{
+        left: 38%;
+        top: 36%;
+        width: 300px;
+      }
+      #line1{
+        width: 300px;
+        left: 43%;
+      }
+      #line2{
+        width: 250px;
+
+      }
+      .playAgain{
+        left: 45%;
+      }
+
+  }
+
